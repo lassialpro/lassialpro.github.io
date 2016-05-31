@@ -69,15 +69,22 @@
         eventsData: {}
     };
 </script>
-<script>(function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
 
+
+  <script>
+    var dataLayer = [{
+       "pageContentCategory" : "index", 
+      "user": {
+        "id": "1234",
+        "gender": "male"
+      },
+      "page": {
+        "type": "home",
+        "pageContentCategory" : "index"
+    }
+   
+    }];
+  </script>
 
 </head>
 <body id="page_home" class="front" data-preferred-url="">
@@ -2530,37 +2537,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</div>
 </div>
  
-            <!-- Module f7514011-e84d-4632-acb6-46346ba8163d 5/26/2016 12:49 PM -->
-<!-- Banner2013Model f7514011-e84d-4632-acb6-46346ba8163d 26.05.2016 12:20:08.223 on WWW-3-32 - IIS_User 
- @moduleident(en/Module/f7514011-e84d-4632-acb6-46346ba8163d)@ -->
-    <script type='text/javascript'>
-        pageModel.CurrentDivId = 'MF6eZGj8802LtLXOa5q3Tw' + parseInt(1000000000 * Math.random()).toString();
-
-        /* the general DFP */
-        var googletag = googletag || {};
-        googletag.cmd = googletag.cmd || [];
-        (function () {
-            var gads = document.createElement('script');
-            gads.async = true;
-            gads.type = 'text/javascript';
-            var useSSL = 'https:' == document.location.protocol;
-            gads.src = (useSSL ? 'https:' : 'http:') +
-                '//www.googletagservices.com/tag/js/gpt.js';
-            var node = document.getElementsByTagName('script')[0];
-            node.parentNode.insertBefore(gads, node);
-        })();
-        
-        if (window.googleAds === undefined) {
-            window.googleAds = [];
-        }
-        
-        window.googleAds.push({ id: pageModel.CurrentDivId, mapping: '[[[1024,768],[728,90]],[[640,480],[468,60]],[[0,0],[300,250]]]', sizes: '[[300, 250], [468, 60], [728, 90]]', slot: '/112208942/FIBAcom_home_general' });
-
-
-
-        document.write('<div><div class="banner"><div id="' + pageModel.CurrentDivId + '"></div></div></div>');
-    </script>
- 
             <!-- Module 5ea3099e-aaf8-4a90-b56e-a9b43485e52a 5/26/2016 12:49 PM -->
 <!-- FollowUsSidebar2013Model 5ea3099e-aaf8-4a90-b56e-a9b43485e52a 26.05.2016 11:59:07.947 on WWW-3-32 - IIS_User 
  @moduleident(en/Module/5ea3099e-aaf8-4a90-b56e-a9b43485e52a)@ -->
@@ -2614,33 +2590,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="player">
             <iframe width="100%" height="100%" src="//www.youtube.com/embed/HdyK_09g3Ko" frameborder="0" allowfullscreen></iframe>
         </div>
-		<script type='text/javascript'>
-			var googletag = googletag || {};
-			googletag.cmd = googletag.cmd || [];
-			(function() {
-			var gads = document.createElement('script');
-			gads.async = true;
-			gads.type = 'text/javascript';
-			var useSSL = 'https:' == document.location.protocol;
-			gads.src = (useSSL ? 'https:' : 'http:') + 
-			'//www.googletagservices.com/tag/js/gpt.js';
-			var node = document.getElementsByTagName('script')[0];
-			node.parentNode.insertBefore(gads, node);
-			})();
-		</script>
 
-		<script type='text/javascript'>
-		googletag.cmd.push(function() {
-		googletag.defineSlot('/112208942/v2-LivebasketballTV', [300, 353], 'div-gpt-ad-1418392143983-0').addService(googletag.pubads());
-		googletag.pubads().enableSingleRequest();
-		googletag.enableServices();
-		});
-		</script>
-		<div id='div-gpt-ad-1418392143983-0' style='width:300px; height:353px;' class="fiba_tv">
-			<script type='text/javascript'>
-			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1418392143983-0'); });
-			</script>
-		</div>
+
+		
+		
         
     </div>
 
